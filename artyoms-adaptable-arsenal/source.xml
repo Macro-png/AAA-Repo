@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name></name>
+        <update version="0.0.1">
+            <file name="source.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/source.xml" />
+        </update>
+    </info>
+    <element name="Artyom’s Adaptable Arsenal" type="Source" source="Core" id="ID_MACRO_SOURCE_ARTYOMS_ADAPTABLE_ARSENAL">
+        <description>
+            <p>Deep down in the City of Quisuiliae a very special tiefling was born. In the heart of innovation and mystery stands Artyom, an ingenious artificer whose mind is as sharp as the weapons he forges. A master of Riftech, Artyom blends arcane knowledge with mechanical precision, crafting devices that defy the boundaries of science and magic. Among his many creations, one stands above all others—his most prized possession, his greatest companion: Wisp.</p>
+        </description>
+        <setters>
+            <set name="abbreviation">AAA</set>
+            <set name="url"></set>
+            <set name="image"></set>
+            <set name="author" abbreviation="MACRO" url="">Macro</set>
+            <set name="official">false</set>
+            <set name="supplement">false</set>
+            <set name="playtest">false</set>
+            <set name="third-party">false</set>
+            <set name="homebrew">true</set>
+            <set name="league">false</set>
+            <set name="release">20250309</set>
+        </setters>
+    </element>
+</elements>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<element name="Shoopie" type="Race" source="Artyom’s Adaptable Arsenal" id="ID_MACRO_AAA_RACE_SHOOPIE">
+		<description>
+			<p>Shoopies gallop throughout the multiverse and trace their origins to many different realms. The shoopies presented here hail from the Feywild and mystically resonate with the natural world. From the waist up, they resemble halflings, displaying all the halfling varieties of skin tone. From the waist down, they have the bodies of sheep.</p>
+			<h4>SHOOPIE TRAITS</h4>
+			<p>As an shoopie, you have the following racial traits.</p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Fey.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Your size is Small.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 35 feet.</p>
+			<p class="indent"><strong><em>Charge.</em></strong> If you move at least 20 feet straight toward a target and then hit it with a melee weapon attack on the same turn, you can immediately follow that attack with a bonus action, making one attack against the target with your horns.</p>
+			<p class="indent"><strong><em>Equine Build.</em></strong> You count as one size larger when determining your carrying capacity and the weight you can push or drag.</p>
+			<p class="indent">In addition, any climb that requires hands and feet is especially difficult for you because of your equine legs. When you make such a climb, each foot of movement costs you 4 extra feet instead of the normal 1 extra foot.</p>
+			<p class="indent"><strong><em>Horns.</em></strong> You have horns that you can use to make unarmed strikes. When you hit with them, the strike deals 1d6 + your Strength modifier bludgeoning damage, instead of the bludgeoning damage normal for an unarmed strike.</p>
+			<p class="indent"><strong><em>Natural Affinity.</em></strong> Your fey connection to nature gives you an intuitive connection to the natural world and the animals within it. You therefore have proficiency in one of the following skills of your choice: Animal Handling, Medicine, Nature, or Survival.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Shoopie)" supports="Custom Ability Score Improvement Option" />
+			<stat name="innate speed" value="35" bonus="base" />
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_FEY" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language (Shoopie)" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Shoopie)" supports="Standard||Exotic" />
+			
+			<grant type="Racial Trait" id="ID_MACRO_AAA_RACIAL_TRAIT_SHOOPIE_CHARGE" />
+			<grant type="Racial Trait" id="ID_MACRO_AAA_RACIAL_TRAIT_SHOOPIE_EQUINE_BUILD" />
+			<grant type="Racial Trait" id="ID_MACRO_AAA_RACIAL_TRAIT_SHOOPIE_HORNS" />
+			<grant type="Racial Trait" id="ID_MACRO_AAA_RACIAL_TRAIT_SHOOPIE_NATURAL_AFFINITY" />
+		</rules>
+	</element>
+	
+	<element name="Charge" type="Racial Trait" source="Artyom’s Adaptable Arsenal" id="ID_MACRO_AAA_RACIAL_TRAIT_SHOOPIE_CHARGE">
+		<description>
+			<p>If you move at least 20 feet straight toward a target and then hit it with a melee weapon attack on the same turn, you can immediately follow that attack with a bonus action, making one attack against the target with your horns.</p>
+		</description>
+		<sheet>
+			<description>If you move at least 20 feet straight toward a target and then hit it with a melee weapon attack on the same turn, you can immediately follow that attack with a bonus action, making one attack against the target with your horns.</description>
+		</sheet>
+	</element>
+
+	<element name="Equine Build" type="Racial Trait" source="Artyom’s Adaptable Arsenal" id="ID_MACRO_AAA_RACIAL_TRAIT_SHOOPIE_EQUINE_BUILD">
+		<description>
+			<p>You count as one size larger when determining your carrying capacity and the weight you can push or drag.</p>
+			<p class="indent">In addition, any climb that requires hands and feet is especially difficult for you because of your equine legs. When you make such a climb, each foot of movement costs you 4 extra feet instead of the normal 1 extra foot.</p>
+		</description>
+		<sheet>
+			<description>You count as one size larger when determining your carrying capacity and the weight you can push or drag.&#13;
+			In addition, any climb that requires hands and feet is especially difficult for you. When you make such a climb, each foot of movement costs you 4 extra feet instead of the normal 1 extra foot.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_COUNTS_AS_LARGER" />
+		</rules>
+	</element>
+
+	<element name="Horns" type="Racial Trait" source="Artyom’s Adaptable Arsenal" id="ID_MACRO_AAA_RACIAL_TRAIT_SHOOPIE_HORNS">
+		<description>
+			<p>You have horns that you can use to make unarmed strikes. When you hit with them, the strike deals 1d6 + your Strength modifier bludgeoning damage, instead of the bludgeoning damage normal for an unarmed strike.</p>
+		</description>
+		<sheet>
+			<description>You can use your horns for unarmed strikes. When you hit with them, the strike deals 1d6 + {{strength:modifier}} bludgeoning damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Natural Affinity" type="Racial Trait" source="Artyom’s Adaptable Arsenal" id="ID_MACRO_AAA_RACIAL_TRAIT_SHOOPIE_NATURAL_AFFINITY">
+		<description>
+			<p>Your fey connection to nature gives you an intuitive connection to the natural world and the animals within it. You therefore have proficiency in one of the following skills of your choice: Animal Handling, Medicine, Nature, or Survival.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Natural Affinity)" supports="ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_SURVIVAL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Natural Affinity)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+</elements>

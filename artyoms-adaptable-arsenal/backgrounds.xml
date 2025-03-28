@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name></name>
+        <update version="0.0.1">
+            <file name="backgrounds.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/backgrounds.xml" />
+        </update>
+    </info>
+    <element name="Displaced" type="Background" source="Artyom’s Adaptable Arsenal" id="ID_MACRO_AAA_BACKGROUND_DISPLACED">
+        <description>
+            <p>You are not where you are supposed to be—not where, but when. Through some temporal anomaly, arcane accident, or other inexplicable event, you have been cast adrift in time. Perhaps you were frozen in stasis, only to awaken centuries later, or maybe you stepped through a rift and emerged in an age far beyond your own. The world has moved on without you, and history has unfolded in your absence.</p>
+            <p class="indent">Adjusting to this new era is no simple task. The people, cultures, and technologies around you may be unfamiliar, and the places you once knew might no longer exist. You may search for a way back to your rightful time, seek to uncover the reason for your displacement, or resign yourself to forging a new path in this strange, distant future.</p>
+            <ul class="unstyled">
+                <li><strong>Skill Proficiencies: History, Insight</strong> </li>
+                <li><strong>Tool Proficiencies: One type of artisan’s tools</strong> </li>
+                <li><strong>Languages: One of your choice</strong> </li>
+                <li><strong>Equipment: A set of clothes from your time, an outdated map, a broken clock or sundial, a pouch containing 30ep</strong> </li>
+            </ul>
+            <div element="ID_MACRO_AAA_BACKGROUND_FEATURE_FIRSTHAND_WITNESS"/>
+        </description>
+		<setters>
+			<set name="short">History, Insight, Artisan’s Tool, Language</set>
+		</setters>
+        <rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+			<select type="Proficiency" name="Artisan’s Tool, Displaced" supports="Artisan tools" />
+			<select type="Language" name="Language, Displaced" supports="Standard||Exotic" />
+            <grant type="Background Feature" id="ID_MACRO_AAA_BACKGROUND_FEATURE_FIRSTHAND_WITNESS" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+            <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+        </rules>
+    </element>
+    <element name="Feature: Firsthand Witness" type="Background Feature" source="Artyom’s Adaptable Arsenal" id="ID_MACRO_AAA_BACKGROUND_FEATURE_FIRSTHAND_WITNESS">
+		<supports>Background Feature</supports>
+		<description>
+			<p>You have an innate understanding of history—not from books, but from firsthand experience. When you encounter references to past events, ancient customs, or historical figures, you can often recognize discrepancies or forgotten details that others would miss. You may recall information that has been lost to time or identify when history has been altered or misrepresented.</p>
+		</description>
+		<sheet alt="Firsthand Witness" />
+	</element>
+</elements>
