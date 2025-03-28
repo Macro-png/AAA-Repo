@@ -3,7 +3,7 @@
     <info>
         <name></name>
         <update version="0.0.1">
-            <file name="source.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/source.xml" />
+            <file name="source.xml" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms-adaptable-arsenal/source.xml" />
         </update>
     </info>
     <element name="Artyom’s Adaptable Arsenal" type="Source" source="Core" id="ID_MACRO_SOURCE_ARTYOMS_ADAPTABLE_ARSENAL">

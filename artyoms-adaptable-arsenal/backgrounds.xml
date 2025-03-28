@@ -3,9 +3,10 @@
     <info>
         <name></name>
         <update version="0.0.1">
-            <file name="backgrounds.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/backgrounds.xml" />
+            <file name="backgrounds.xml" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms-adaptable-arsenal/backgrounds.xml" />
         </update>
     </info>
+
     <element name="Displaced" type="Background" source="Artyom’s Adaptable Arsenal" id="ID_MACRO_AAA_BACKGROUND_DISPLACED">
         <description>
             <p>You are not where you are supposed to be—not where, but when. Through some temporal anomaly, arcane accident, or other inexplicable event, you have been cast adrift in time. Perhaps you were frozen in stasis, only to awaken centuries later, or maybe you stepped through a rift and emerged in an age far beyond your own. The world has moved on without you, and history has unfolded in your absence.</p>

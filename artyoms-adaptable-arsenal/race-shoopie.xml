@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
+    <info>
+        <name></name>
+        <update version="0.0.1">
+            <file name="race-shoopie.xml" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms-adaptable-arsenal/race-shoopie.xml" />
+        </update>
+    </info>
+
 	<element name="Shoopie" type="Race" source="Artyom’s Adaptable Arsenal" id="ID_MACRO_AAA_RACE_SHOOPIE">
 		<description>
 			<p>Shoopies gallop throughout the multiverse and trace their origins to many different realms. The shoopies presented here hail from the Feywild and mystically resonate with the natural world. From the waist up, they resemble halflings, displaying all the halfling varieties of skin tone. From the waist down, they have the bodies of sheep.</p>
