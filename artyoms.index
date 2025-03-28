@@ -3,19 +3,19 @@
     <info>
         <name></name>
         <update version="0.0.1">
-            <file name="artyoms.index" url="https://raw.githubusercontent.com/Macro-png/artyoms-adaptable-arsenal/refs/heads/main/artyoms-adaptable-arsenal/artyoms.index" />
+            <file name="artyoms.index" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms-adaptable-arsenal/artyoms.index" />
         </update>
     </info>
     <files>
 
-        <file name="source.xml" url="https://raw.githubusercontent.com/Macro-png/artyoms-adaptable-arsenal/refs/heads/main/artyoms-adaptable-arsenal/source.xml" />
+        <file name="source.xml" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms-adaptable-arsenal/source.xml" />
 
         <!-- Character Options -->
-        <file name="race-myconid.xml" url="https://raw.githubusercontent.com/Macro-png/artyoms-adaptable-arsenal/refs/heads/main/artyoms-adaptable-arsenal/race-myconid.xml" />
-        <file name="race-shoopie.xml" url="https://raw.githubusercontent.com/Macro-png/artyoms-adaptable-arsenal/refs/heads/main/artyoms-adaptable-arsenal/race-shoopie.xml" />
-        <file name="backgrounds.xml" url="https://raw.githubusercontent.com/Macro-png/artyoms-adaptable-arsenal/refs/heads/main/artyoms-adaptable-arsenal/backgrounds.xml" />
+        <file name="race-myconid.xml" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms-adaptable-arsenal/race-myconid.xml" />
+        <file name="race-shoopie.xml" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms-adaptable-arsenal/race-shoopie.xml" />
+        <file name="backgrounds.xml" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms-adaptable-arsenal/backgrounds.xml" />
 
         <!-- Items & Spells -->
-        <file name="items.xml" url="https://raw.githubusercontent.com/Macro-png/artyoms-adaptable-arsenal/refs/heads/main/artyoms-adaptable-arsenal/items.xml" />
+        <file name="items.xml" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms-adaptable-arsenal/items.xml" />
     </files>
 </index>
