@@ -119,7 +119,7 @@
             <p>While wearing this armor, you gain tremorsense with a range of 10 feet. You can detect and pinpoint the origin of vibrations within this range, provided that you and the source of the vibrations are in contact with the same ground or substance. This sense cannot be used to detect flying or incorporeal creatures.</p>
         </description>
         <setters>
-            <set name="keywords">plate, tremorsense</set>
+            <set name="keywords">plate</set>
             <set name="category">Magic Armor</set>
             <set name="cost" currency="gp">0</set>
             <set name="slot">body</set>
