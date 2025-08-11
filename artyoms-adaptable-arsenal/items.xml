@@ -113,11 +113,31 @@
         </rules>
     </append>
 
+    <!-- Magic armor -->
+    <element name="name" type="Magic Item" source="Artyom’s Adaptable Arsenal" id="ID_MACRO_AAA_MAGIC_ITEM_ARMOR_BULETTE_PLATE">
+        <description>
+            <p>While wearing this armor, you gain tremorsense with a range of 10 feet. You can detect and pinpoint the origin of vibrations within this range, provided that you and the source of the vibrations are in contact with the same ground or substance. This sense cannot be used to detect flying or incorporeal creatures.</p>
+        </description>
+        <setters>
+            <set name="keywords">plate, tremorsense</set>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="slot">body</set>
+			<set name="type" addition="plate">Armor</set>
+			<set name="rarity">Uncommon</set>
+			<set name="armor">Plate</set>
+        </setters>
+        <rules>
+			<grant type="Vision" id="ID_VISION_TREMORSENSE" />
+			<stat name="tremorsense:range" value="10" />
+		</rules>
+    </element>
+
     <!-- Wonderous Items -->
-    <element name="Coat of Many Pockets" type="Magic Item" source="Artyom’s Adaptable Arsenal" id="ID_MACRO_AAA_MAGIC_ITEM_COAT_OF_MANY_POCKETS">
+    <element name="Coat of Many Pockets" type="Magic Item" source="source" id="ID_MACRO_AAA_MAGIC_ITEM_COAT_OF_MANY_POCKETS">
         <description>
             <p>This finely crafted coat or cloak is tailored to fit its wearer perfectly. Its outer material varies, ranging from luxurious fabrics to sturdy leathers, often adorned with subtle, intricate patterns. While it may appear to be a mere fashionable garment, its true magic lies within.</p>
-            <p><strong>Extradimensional Pockets.</strong>While wearing this coat, you can access an array of pockets that appear wherever you wish on the garment. These pockets function as a single Bag of Holding, all leading to the same extradimensional space. Only you, or creatures you designate, can retrieve or store items within the coat. Others attempting to access its contents find only mundane, empty pockets.</p>
+            <p><strong>Extradimensional Pockets.<strong>While wearing this coat, you can access an array of pockets that appear wherever you wish on the garment. These pockets function as a single Bag of Holding, all leading to the same extradimensional space. Only you, or creatures you designate, can retrieve or store items within the coat. Others attempting to access its contents find only mundane, empty pockets.</p>
         </description>
         <setters>
             <set name="category">Wondrous Items</set>
