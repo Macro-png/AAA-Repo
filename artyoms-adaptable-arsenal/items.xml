@@ -114,7 +114,7 @@
     </append>
 
     <!-- Magic armor -->
-    <element name="name" type="Magic Item" source="Artyom’s Adaptable Arsenal" id="ID_MACRO_AAA_MAGIC_ITEM_ARMOR_BULETTE_PLATE">
+    <element name="Bulette Plate" type="Magic Item" source="Artyom’s Adaptable Arsenal" id="ID_MACRO_AAA_MAGIC_ITEM_ARMOR_BULETTE_PLATE">
         <description>
             <p>While wearing this armor, you gain tremorsense with a range of 10 feet. You can detect and pinpoint the origin of vibrations within this range, provided that you and the source of the vibrations are in contact with the same ground or substance. This sense cannot be used to detect flying or incorporeal creatures.</p>
         </description>
