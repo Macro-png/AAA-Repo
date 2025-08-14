@@ -134,7 +134,7 @@
 		</rules>
     </element>
 
-    <!-- Wonderous Items -->
+    <!-- Wondrous Items -->
     <element name="Coat of Many Pockets" type="Magic Item" source="Artyom’s Adaptable Arsenal" id="ID_MACRO_AAA_MAGIC_ITEM_COAT_OF_MANY_POCKETS">
         <description>
             <p>This finely crafted coat or cloak is tailored to fit its wearer perfectly. Its outer material varies, ranging from luxurious fabrics to sturdy leathers, often adorned with subtle, intricate patterns. While it may appear to be a mere fashionable garment, its true magic lies within.</p>
@@ -145,6 +145,21 @@
             <set name="cost" currency="gp">0</set>
             <set name="weight" lb="0">0 lb.</set>
             <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Aqua's Oar" type="Magic Item" source="Artyom’s Adaptable Arsenal" id="ID_source_abbreviation_MAGIC_ITEM_name">
+        <description>
+            <p>While holding this oar, you can cast the <em>shape water</em> cantrip at will. Once per dawn, you can cast <em>control water</em> from it, using your spell save DC. You must hold the oar in both hands to use this property.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="1">4 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="type">Wondrous Items</set>
             <set name="rarity">Rare</set>
             <set name="attunement">true</set>
         </setters>
