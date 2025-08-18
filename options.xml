@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Options</name>
+        <update version="0.0.1">
+            <file name="options.xml" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms-adaptable-arsenal/options.xml" />
+        </update>
+    </info>
+
+    <element name="Additional Feat at Level 1" type="Option" source="Artyom’s Adaptable Arsenal" id="ID_MACRO_AAA_OPTION_ADDITIONAL_FEAT_LEVEL_1">
+        <description>
+            <p>You may select an additional Feat at level 1.</p>
+        </description>
+        <setters>
+            <set name="short">You may select an additional Feat at level 1.</set>
+        </setters>
+        <rules>
+            <select type="Feat" name="Feat (Level 1)" />
+        </rules>
+    </element>  
+    
+</elements>
