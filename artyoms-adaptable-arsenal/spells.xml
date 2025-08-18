@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name></name>
+        <update version="0.0.1">
+            <file name="spells.xml" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms-adaptable-arsenal/spells.xml" />
+        </update>
+    </info>
+    
+    <!-- Cantrips -->
+    <element name="Magnify Sight" type="Spell" source="Artyom’s Adaptable Arsenal" id="ID_MACRO_AAA_SPELL_MAGNIFY_SIGHT">
+        <supports>Bard, Wizard, Artificer</supports>
+        <description>
+            <p>You create a loop with your fingers and peer through it, magically magnifying your sight. While concentrating, anything you can see viewed through the loop appears twice as large.</p>
+            <p class="indent">The spell’s magnification increases to four times at 5th level, eight times at 11th level, and sixteen times at 17th level.</p>
+        </description>
+        <setters>
+            <set name="keywords">visual</set>
+            <set name="level">0</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="duration">Concentration, up to 10 minutes</set>
+            <set name="range">Self</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent" />
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+</elements>

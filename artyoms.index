@@ -2,7 +2,7 @@
 <index>
     <info>
         <name></name>
-        <update version="0.0.3">
+        <update version="0.0.4">
             <file name="artyoms.index" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms.index" />
         </update>
     </info>
@@ -17,6 +17,7 @@
 
         <!-- Items & Spells -->
         <file name="items.xml" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms-adaptable-arsenal/items.xml" />
+        <file name="spells.xml" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms-adaptable-arsenal/spells.xml" />
 
         <!-- Misc -->
         <file name="options.xml" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms-adaptable-arsenal/options.xml" />
