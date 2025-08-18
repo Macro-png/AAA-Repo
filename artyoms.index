@@ -19,5 +19,6 @@
         <file name="items.xml" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms-adaptable-arsenal/items.xml" />
 
         <!-- Misc -->
+        <file name="options.xml" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms-adaptable-arsenal/options.xml" />
     </files>
 </index>
