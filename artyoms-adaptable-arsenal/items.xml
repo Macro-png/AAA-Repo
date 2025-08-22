@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Items</name>
-        <update version="0.0.3">
+        <update version="0.0.4">
             <file name="items.xml" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms-adaptable-arsenal/items.xml" />
         </update>
     </info>
@@ -12,7 +12,7 @@
         <description>
             <p>Forged for bards who dance between battle and melody, the Singing Snare is a silver-braided whip that hums with a haunting tune when wielded. Its handle is engraved with flowing musical notes, and the initials R.C. are delicately carved into the base. The whip’s magic resonates with the bard’s performance, enhancing their ability to heal and control the battlefield.</p>
             <p class="indent">While the Singing Snare is in a dormant state, the whip has 5 charges and regains 1d4 + 1 expended charges daily at dawn. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC: <em>entangle</em> (1 charge) or <em>tasha’s mind whip</em> (2 charges)</p>
-            <p class="indent">Additionally, You gain a +1 bonus to attack and damage rolls made with this magic weapon, and you can attempt to charm any creature that is hit by the whip. The creature must succeed on a Wisdom saving throw against your spell save DC or become charmed by you until the beginning of your next turn</p>
+            <p class="indent">Additionally, You gain a +1 bonus to attack and damage rolls made with this magic weapon, and you can expend one charge to attempt to charm any creature that is hit by the whip. The creature must succeed on a Wisdom saving throw against your spell save DC or become charmed by you until the beginning of your next turn</p>
         </description>
         <setters>
             <set name="keywords">whip, bard</set>
