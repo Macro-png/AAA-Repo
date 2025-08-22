@@ -19,7 +19,7 @@
 			<p class="indent"><strong><em>Fungal Form.</em></strong> You have advantage on saving throws against poison, and resistance to poison damage.</p>
 			<p class="indent"><strong><em>Languages.</em></strong> You can read, understand, and write Common and Undercommon. You cannot speak it.</p>
             <p class="indent"><strong><em>Pheromone Spores.</em></strong> Myconid sprouts learn to bathe threats in scented spores on sight so older and stronger members of the circle can track and destroy them. You can use a bonus action to cover one creature that you can see within 60 feet of you with those spores. For 1 minute, you and all other myconids and spore servants have advantage on attack rolls against that creature. You can fire those spores a number of times equal to your Constitution modifier (a minimum of once) and regain all expended uses when you complete a long rest.</p>
-            <p class="indent"><strong><em>Rapport Spores.</em></strong> You may as an action, extend rapport spores in a 20-foot radius. These spores can go around corners and affect only creatures with an Intelligence of 2 or higher that aren’t undead, constructs, or elementals. Affected creatures can communicate telepathically with you while they are within 30 feet of you. The effect lasts for 1 hour.</p>
+            <p class="indent"><strong><em>Rapport Spores.</em></strong> The creature can communicate telepathically with any creature it can see within 30 feet of it. The creature and the target must share a language, and the target must have an Intelligence of 2 or higher and not be an undead, construct, or elemental.</p>
         </description>
         <sheet display="false" />
         <rules>
