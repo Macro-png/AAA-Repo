@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-        <update version="0.0.3">
+        <update version="0.0.4">
             <file name="spells.xml" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms-adaptable-arsenal/spells.xml" />
         </update>
     </info>
@@ -24,21 +24,21 @@
             <set name="hasVerbalComponent">false</set>
             <set name="hasSomaticComponent">true</set>
             <set name="hasMaterialComponent">false</set>
-            <set name="materialComponent"></set>
+            <set name="materialComponent" />
             <set name="isConcentration">true</set>
             <set name="isRitual">false</set>
         </setters>
     </element>
 
     <!-- 1st Level Spells -->
-    <element name="Chain Pull" type="Spell" source="Artyom’s Adaptable Arsenal" id="ID_author_source_SPELL_CHAIN_PULL">
+    <element name="Chain Pull" type="Spell" source="Artyom’s Adaptable Arsenal" id="ID_MACRO_AAA_SPELL_CHAIN_PULL">
         <supports>Warlock</supports>
         <description>   
-            <p>Spectral chains burst from you, striking all creatures within range. Each creature in a 15-foot radius centered on you must make a Strength saving throw. On a failed save, a creature takes 2d4 force damage and is pulled 10 feet closer to you. On a successful save, the creature takes half as much damage and is not pulled.</p>
-            <p class="indent">When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d4 for each slot level above 1st.</p>
+            <p>Spectral chains lash out from you. Choose any number of creatures of your choice within 15 feet of you. Each chosen creature must make a Strength saving throw. On a failed save, the creature takes 1d6 force damage and is pulled 10 feet closer to you. On a successful save, the creature takes half as much damage and is not pulled.</p>
+            <p class="indent">When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.</p>
         </description>
         <setters>
-            <set name="keywords"></set>
+            <set name="keywords">force, control</set>
             <set name="level">1</set>
             <set name="school">Conjuration</set>
             <set name="time">1 action</set>
@@ -47,7 +47,7 @@
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
             <set name="hasMaterialComponent">false</set>
-            <set name="materialComponent"></set>
+            <set name="materialComponent" />
             <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
         </setters>
