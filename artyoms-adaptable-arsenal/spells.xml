@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <file name="spells.xml" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms-adaptable-arsenal/spells.xml" />
         </update>
     </info>
@@ -31,7 +31,7 @@
     </element>
 
     <!-- 1st Level Spells -->
-    <element name="Chain Pull" type="Spell" source="Artyom's Adaptable Arsenal" id="ID_author_source_SPELL_CHAIN_PULL">
+    <element name="Chain Pull" type="Spell" source="Artyom’s Adaptable Arsenal" id="ID_author_source_SPELL_CHAIN_PULL">
         <supports>Warlock</supports>
         <description>   
             <p>Spectral chains burst from you, striking all creatures within range. Each creature in a 15-foot radius centered on you must make a Strength saving throw. On a failed save, a creature takes 2d4 force damage and is pulled 10 feet closer to you. On a successful save, the creature takes half as much damage and is not pulled.</p>
