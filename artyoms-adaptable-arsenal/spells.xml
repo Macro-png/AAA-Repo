@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-        <update version="0.0.5">
+        <update version="0.0.6">
             <file name="spells.xml" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms-adaptable-arsenal/spells.xml" />
         </update>
     </info>
@@ -19,7 +19,7 @@
             <set name="level">0</set>
             <set name="school">Transmutation</set>
             <set name="time">1 action</set>
-            <set name="duration">Concentration, up to 10 minutes</set>
+            <set name="duration">Concentration, up to 1 minutes</set>
             <set name="range">Self</set>
             <set name="hasVerbalComponent">false</set>
             <set name="hasSomaticComponent">true</set>
