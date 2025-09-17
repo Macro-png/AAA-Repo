@@ -19,7 +19,7 @@
             <set name="level">0</set>
             <set name="school">Transmutation</set>
             <set name="time">1 action</set>
-            <set name="duration">Concentration, up to 1 minutes</set>
+            <set name="duration">Concentration, up to 1 minute</set>
             <set name="range">Self</set>
             <set name="hasVerbalComponent">false</set>
             <set name="hasSomaticComponent">true</set>
