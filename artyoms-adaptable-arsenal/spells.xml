@@ -34,7 +34,7 @@
     <element name="Chain Pull" type="Spell" source="Artyom’s Adaptable Arsenal" id="ID_MACRO_AAA_SPELL_CHAIN_PULL">
         <supports>Warlock</supports>
         <description>   
-            <p>Spectral chains lash out from you. Choose any number of creatures of your choice within 15 feet of you. Each chosen creature must make a Strength saving throw. On a failed save, the creature takes 2d4 force damage and is pulled 10 feet closer to you. On a successful save, the creature takes half as much damage and is not pulled.</p>
+            <p>Spectral chains lash out from you. Each creature of your choice in a 15-foot emanation originating from you must make a Strength saving throw. On a failed save, a target takes 2d4 force damage and is pulled 10 feet closer to you. On a successful save, a target takes half as much damage and is not pulled.</p>
             <p class="indent">When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 2d4 for each slot level above 1st.</p>
         </description>
         <setters>
@@ -42,7 +42,7 @@
             <set name="level">1</set>
             <set name="school">Conjuration</set>
             <set name="time">1 action</set>
-            <set name="range">Self (15-foot radius)</set>
+            <set name="range">Self</set>
             <set name="duration">Instantaneous</set>
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
