@@ -11,8 +11,8 @@
         <file name="source.xml" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms-adaptable-arsenal/source.xml" />
 
         <!-- Character Options -->
-        <file name="race-myconid.xml" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms-adaptable-arsenal/species/race-myconid.xml" />
-        <file name="race-shoopie.xml" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms-adaptable-arsenal/species/race-shoopie.xml" />
+        <file name="race-myconid.xml" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms-adaptable-arsenal/Species/race-myconid.xml" />
+        <file name="race-shoopie.xml" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms-adaptable-arsenal/Species/race-shoopie.xml" />
         <file name="backgrounds.xml" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms-adaptable-arsenal/backgrounds.xml" />
 
         <!-- Items & Spells -->
