@@ -2,7 +2,7 @@
 <index>
     <info>
         <name></name>
-        <update version="0.0.6">
+        <update version="0.0.7">
             <file name="artyoms.index" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms.index" />
         </update>
     </info>
@@ -14,6 +14,9 @@
         <file name="race-myconid.xml" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms-adaptable-arsenal/Species/race-myconid.xml" />
         <file name="race-shoopie.xml" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms-adaptable-arsenal/Species/race-shoopie.xml" />
         <file name="backgrounds.xml" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms-adaptable-arsenal/backgrounds.xml" />
+
+        <!-- Subclasses -->
+        <file name="wizard-living-grimoire.xml" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms-adaptable-arsenal/Subclasses/wizard-living-grimoire.xml" />
 
         <!-- Items & Spells -->
         <file name="items.xml" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms-adaptable-arsenal/items.xml" />
