@@ -2,7 +2,7 @@
 <index>
     <info>
         <name></name>
-        <update version="0.0.7">
+        <update version="0.0.8">
             <file name="artyoms.index" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms.index" />
         </update>
     </info>
