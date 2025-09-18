@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Living Grimoire</name>
+        <update version="0.0.1">
+            <file name="wizard-living-grimoire.xml" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms-adaptable-arsenal/Subclasses/wizard-living-grimoire.xml" />
+        </update>
+    </info>
+    
+    <element name="Living Grimoire" type="Archetype" source="Artyom’s Adaptable Arsenal" id="ID_MACRO_AAA_ARCHETYPE_LIVING_GRIMOIRE">
+        <supports>Arcane Tradition</supports>
+        <description>
+            <p></p>
+            <p class="indent"></p>
+            <div element="ID_MACRO_AAA_ARCHETYPE_FEATURE_LIVING_GRIMOIRE_SHARED_INK" />
+            <div element="ID____" />
+            <div element="ID____" />
+            <div element="ID____" />
+            <div element="ID____" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_MACRO_AAA_ARCHETYPE_FEATURE_LIVING_GRIMOIRE_SHARED_INK" level="2" />
+            <grant type="Archetype Feature" id="ID____" level="1" />
+            <grant type="Archetype Feature" id="ID____" level="1" />
+            <grant type="Archetype Feature" id="ID____" level="1" />
+            <grant type="Archetype Feature" id="ID____" level="1" />
+        </rules>
+    </element>
+
+    <element name="Shared Ink" type="Archetype Feature" source="Artyom’s Adaptable Arsenal" id="ID_MACRO_AAA_ARCHETYPE_FEATURE_LIVING_GRIMOIRE_SHARED_INK">
+        <description>
+            <p>At 2nd level, you gain the ability to inscribe a magical tattoo onto one willing creature other than yourself at the end of a long rest. The tattoo remains until you finish your next long rest.</p>
+            <p class="indent">As a bonus action, the creature can activate the tattoo, causing it to flare with arcane power for 1 minute. Choose one of the following tattoos when you inscribe it:</p>
+            <ul>
+                <li><strong>Ward of Ink.</strong> The creature gains a +2 bonus to AC.</li>
+                <li><strong>Strike of Ink.</strong> Once per turn, when the creature hits with a weapon attack, it deals extra damage equal to your Intelligence modifier.</li>
+                <li><strong>Glyph of Vigor.</strong> At the start of each of its turns, the creature gains temporary hit points equal to your Intelligence modifier.</li>
+            </ul>
+            <p class="indent">Once activated, the tattoo’s magic is expended when the effect ends, and the tattoo fades. A creature can’t benefit from more than one Shared Ink tattoo at a time.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>At the end of a long rest, inscribe a magical tattoo on one willing creature (not yourself). The creature can activate it as a bonus action to gain one of three effects for 1 minute: +2 AC, extra weapon damage equal to your Int modifier, or temporary hit points equal to your Int modifier each turn. Only one Shared Ink tattoo can affect a creature at a time.</description>
+        </sheet>
+    </element>
+    
+</elements>
