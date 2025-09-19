@@ -52,7 +52,7 @@
             <p class="indent">Once activated, the tattoo’s magic is expended when the effect ends, and the tattoo fades. A creature can’t benefit from more than one Shared Ink tattoo at a time.</p>
         </description>
         <sheet action="Bonus Action">
-            <description>At the end of a long rest, inscribe a magical tattoo on one willing creature (not yourself). The creature can activate it as a bonus action to gain one of three effects for 1 minute: +2 AC, extra weapon damage equal to your Int modifier, or temporary hit points equal to your Int modifier each turn. Only one Shared Ink tattoo can affect a creature at a time.</description>
+            <description>At the end of a long rest, inscribe a magical tattoo on one willing creature other than yourself. The creature can activate it as a bonus action to gain one of three effects for 1 minute: +2 AC, extra weapon damage equal to your Int modifier, or temporary hit points equal to your Int modifier each turn. Only one Shared Ink tattoo can affect a creature at a time.</description>
         </sheet>
     </element>
 
@@ -63,7 +63,7 @@
             <p class="indent">You can use this feature a number of times equal to your Intelligence modifier (minimum of once). You regain all expended uses when you finish a long rest.</p>
         </description>
         <sheet action="Reaction" usage="{{ink step:usage}}/Long Rest">
-            <description>When you take damage from a creature you can see, you can teleport up to 10 feet to an unoccupied space. Ink Trail creates lightly obscured terrain in your previous space for 1 turn. Uses per long rest equal to your Intelligence modifier (minimum 1).</description>
+            <description>When you take damage from a creature you can see, you can teleport up to 10 feet to an unoccupied space. Ink Trail creates lightly obscured terrain in your previous space until the end of your next turn. You can use this feature a number of times equal to your Intelligence modifier (minimum 1).</description>
         </sheet>
         <rules>
             <stat name="ink step:usage" value="1" bonus="base" />
