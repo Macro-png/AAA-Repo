@@ -15,7 +15,7 @@
             <div element="ID_MACRO_AAA_ARCHETYPE_FEATURE_LIVING_GRIMOIRE_INK_AND_SKIN" />
             <div element="ID_MACRO_AAA_ARCHETYPE_FEATURE_LIVING_GRIMOIRE_SHARED_INK" />
             <div element="ID_MACRO_AAA_ARCHETYPE_FEATURE_LIVING_GRIMOIRE_INK_STEP" />
-            <div element="ID____" />
+            <div element="ID_MACRO_AAA_ARCHETYPE_FEATURE_LIVING_GRIMOIRE_REACTIVE_INK" />
             <div element="ID____" />
         </description>
         <sheet display="false">
@@ -25,7 +25,7 @@
             <grant type="Archetype Feature" id="ID_MACRO_AAA_ARCHETYPE_FEATURE_LIVING_GRIMOIRE_INK_AND_SKIN" level="2" />
             <grant type="Archetype Feature" id="ID_MACRO_AAA_ARCHETYPE_FEATURE_LIVING_GRIMOIRE_SHARED_INK" level="2" />
             <grant type="Archetype Feature" id="ID_MACRO_AAA_ARCHETYPE_FEATURE_LIVING_GRIMOIRE_INK_STEP" level="6" />
-            <grant type="Archetype Feature" id="ID____" level="1" />
+            <grant type="Archetype Feature" id="ID_MACRO_AAA_ARCHETYPE_FEATURE_LIVING_GRIMOIRE_REACTIVE_INK" level="10" />
             <grant type="Archetype Feature" id="ID____" level="1" />
         </rules>
     </element>
@@ -55,14 +55,10 @@
 
         <sheet>
             <description>
-                <p>At the end of a long rest, you inscribe a magical tattoo on a willing creature. When you inscribe the tattoo, choose one of the following effects:</p>
-                <p class="indent"><strong>Ward of Ink.</strong> The creature gains a +2 bonus to AC while the tattoo is active.</p>
-                <p class="indent"><strong>Strike of Ink.</strong> Once on each of its turns, when the creature hits with a weapon attack, it deals extra damage equal to your Intelligence modifier.</p>
-                <p class="indent"><strong>Glyph of Vigor.</strong> At the start of each of the creature’s turns, it gains temporary hit points equal to your Intelligence modifier.</p>
-                <p>The creature can activate the tattoo as a bonus action, causing it to flare with arcane power for 1 minute. Once activated, the tattoo’s magic is expended when the effect ends, and the tattoo fades. A creature can’t benefit from more than one Shared Ink tattoo at a time.</p>
+                <p>At the end of a long rest, you inscribe a magical tattoo on a willing creature.</p>
+                <p>The creature can activate the tattoo as a bonus action, for a duration of 1 minute. Once activated, the tattoo’s magic is expended when the effect ends, and the tattoo fades. A creature can’t benefit from more than one Shared Ink tattoo at a time.</p>
             </description>
         </sheet>
-
     </element>
 
     <element name="Ink Step" type="Archetype Feature" source="Artyom’s Adaptable Arsenal" id="ID_MACRO_AAA_ARCHETYPE_FEATURE_LIVING_GRIMOIRE_INK_STEP">
@@ -80,5 +76,19 @@
             <stat name="ink step:usage" value="intelligence:modifier" bonus="base" />
         </rules>
     </element>
+
+    <element name="Reactive Ink" type="Archetype Feature" source="Artyom’s Adaptable Arsenal" id="ID_MACRO_AAA_ARCHETYPE_FEATURE_LIVING_GRIMOIRE_REACTIVE_INK">
+        <description>
+            <p><em>10th-level Living Grimoire feature</em></p>
+            <p>When you take damage while concentrating on a spell, your tattoos flare to life, defending your magic. You can choose to automatically succeed on the Constitution saving throw to maintain concentration.</p>
+            <p class="indent">In addition, inky tendrils lash out from your tattoos. All creatures of your choice in a 10-foot emanation must make a Strength saving throw against your spell save DC, taking 2d6 force damage on a failed save, or half as much on a successful one.</p>
+            <p class="indent">Once you use this feature, you can’t use it again until you take a long rest or cast another spell of 3rd level or higher that requires concentration, at which point Reactive Ink recharges.</p>
+        </description>
+
+        <sheet action="Reaction" usage="1/Long Rest">
+            <description>When you take damage while concentrating on a spell, you can automatically succeed on your Constitution saving throw to maintain concentration. Inky tendrils lash out from your tattoos: all creatures of your choice in a 10-foot radius must make a Strength saving throw against your spell save DC, taking 2d6 force damage on a failed save, or half as much on a successful one. This feature recharges after you take a long rest or cast another spell of 3rd level or higher that requires concentration.</description>
+        </sheet>
+    </element>
+
 
 </elements>
