@@ -32,7 +32,8 @@
 
     <element name="Ink and Skin" type="Archetype Feature" source="Artyom’s Adaptable Arsenal" id="ID_MACRO_AAA_ARCHETYPE_FEATURE_LIVING_GRIMOIRE_INK_AND_SKIN">
         <description>
-            <p>You replace the wizard’s spellbook with tattoos etched upon your body. These living etchings serve as your grimoire. When you prepare wizard spells, the tattoos on your body shift and realign, glowing faintly with arcane light.</p>
+            <p><em>2nd-level Living Grimoire feature</em></p>
+            <p>You replace your wizard’s spellbook with tattoos etched upon your body. These living etchings serve as your grimoire. When you prepare wizard spells, the tattoos on your body shift and realign, glowing faintly with arcane light.</p>
             <p class="indent">When you find a spell, you can inscribe it onto your skin by spending 2 hours and 25 gp per level of the spell. If your tattoos are ever destroyed, you can recreate them during a long rest at the same cost and time as replacing a lost spellbook.</p>
         </description>
         <sheet>
@@ -42,23 +43,30 @@
 
     <element name="Shared Ink" type="Archetype Feature" source="Artyom’s Adaptable Arsenal" id="ID_MACRO_AAA_ARCHETYPE_FEATURE_LIVING_GRIMOIRE_SHARED_INK">
         <description>
-            <p>At 2nd level, you gain the ability to inscribe a magical tattoo onto one willing creature other than yourself at the end of a long rest. The tattoo remains until you finish your next long rest.</p>
-            <p class="indent">As a bonus action, the creature can activate the tattoo, causing it to flare with arcane power for 1 minute. Choose one of the following tattoos when you inscribe it:</p>
+            <p><em>2nd-level Living Grimoire feature</em></p>
+            <p>You gain the ability to inscribe a magical tattoo onto one willing creature other than yourself at the end of a long rest. The tattoo lasts until you finish your next long rest. When you inscribe the tattoo, choose one of the following effects:</p>
             <ul>
                 <li><strong>Ward of Ink.</strong> The creature gains a +2 bonus to AC.</li>
-                <li><strong>Strike of Ink.</strong> Once per turn, when the creature hits with a weapon attack, it deals extra damage equal to your Intelligence modifier.</li>
-                <li><strong>Glyph of Vigor.</strong> At the start of each of its turns, the creature gains temporary hit points equal to your Intelligence modifier.</li>
+                <li><strong>Strike of Ink.</strong> Once per turn, when the creature hits with a weapon attack, it deals extra damage equal to your Intelligence modifier (minimum of +1).</li>
+                <li><strong>Glyph of Vigor.</strong> At the start of each of its turns, the creature gains temporary hit points equal to your Intelligence modifier (minimum of +1).</li>
             </ul>
-            <p class="indent">Once activated, the tattoo’s magic is expended when the effect ends, and the tattoo fades. A creature can’t benefit from more than one Shared Ink tattoo at a time.</p>
+            <p>As a bonus action, the creature can activate the tattoo, causing it to flare with arcane power for 1 minute. Once activated, the tattoo’s magic is expended when the effect ends, and the tattoo fades. A creature can’t benefit from more than one Shared Ink tattoo at a time.</p>
         </description>
-        <sheet action="Bonus Action">
-            <description>At the end of a long rest, inscribe a magical tattoo on one willing creature other than yourself. The creature can activate it as a bonus action to gain one of three effects for 1 minute: +2 AC, extra weapon damage equal to your Int modifier, or temporary hit points equal to your Int modifier each turn. Only one Shared Ink tattoo can affect a creature at a time.</description>
+
+        <sheet>
+            <description>At the end of a long rest, you inscribe a magical tattoo on a willing creature. When inscribed, choose one of the following effects:</description>
+            <description class="indent"><strong>Ward of Ink.</strong> The creature gains a +2 bonus to AC.</description>
+            <description class="indent"><strong>Strike of Ink.</strong> Once on each of its turns, when the creature hits with a weapon attack, it gains a +{{intelligence:modifier}} force damage</description>
+            <description class="indent"><strong>Glyph of Vigor.</strong> At the start of each of the creature’s turns, it gains {{intelligence:modifier}} temporary hit points.</description>
+            <description>The creature can activate the tattoo as a bonus action, causing it to flare with arcane power for 1 minute. Once activated, the tattoo’s magic is expended when the effect ends, and the tattoo fades. A creature can’t benefit from more than one Shared Ink tattoo at a time.</description>
         </sheet>
+
     </element>
 
     <element name="Ink Step" type="Archetype Feature" source="Artyom’s Adaptable Arsenal" id="ID_MACRO_AAA_ARCHETYPE_FEATURE_LIVING_GRIMOIRE_INK_STEP">
         <description>
-            <p>Your tattoos pulse with arcane energy, allowing you to slip away when danger strikes. When you take damage from a creature you can see, you can use your reaction to teleport up to 10 feet to an unoccupied space you can see.</p>
+            <p><em>6th-level Living Grimoire feature</em></p>
+            <p>You gain further control of the ink in your body, allowing you to slip away when danger strikes. When you take damage from a creature you can see, you can use your reaction to teleport up to 10 feet to an unoccupied space you can see.</p>
             <p class="indent"><strong>Ink Trail.</strong> When you use Ink Step, you leave behind a faint trail of swirling ink in your previous space until the start of your next turn. This area counts as lightly obscured for creatures within 5 feet, granting them disadvantage on Perception checks that rely on sight.</p>
             <p class="indent">You can use this feature a number of times equal to your Intelligence modifier (minimum of once). You regain all expended uses when you finish a long rest.</p>
         </description>
