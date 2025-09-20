@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Living Grimoire</name>
-        <update version="0.0.3">
+        <update version="0.0.4">
             <file name="wizard-living-grimoire.xml" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms-adaptable-arsenal/Subclasses/wizard-living-grimoire.xml" />
         </update>
     </info>
@@ -54,11 +54,13 @@
         </description>
 
         <sheet>
-            <description>At the end of a long rest, you inscribe a magical tattoo on a willing creature. When inscribed, choose one of the following effects:</description>
-            <description class="indent"><strong>Ward of Ink.</strong> The creature gains a +2 bonus to AC.</description>
-            <description class="indent"><strong>Strike of Ink.</strong> Once on each of its turns, when the creature hits with a weapon attack, it gains a +{{intelligence:modifier}} force damage</description>
-            <description class="indent"><strong>Glyph of Vigor.</strong> At the start of each of the creature’s turns, it gains {{intelligence:modifier}} temporary hit points.</description>
-            <description>The creature can activate the tattoo as a bonus action, causing it to flare with arcane power for 1 minute. Once activated, the tattoo’s magic is expended when the effect ends, and the tattoo fades. A creature can’t benefit from more than one Shared Ink tattoo at a time.</description>
+            <description>
+                <p>At the end of a long rest, you inscribe a magical tattoo on a willing creature. When you inscribe the tattoo, choose one of the following effects:</p>
+                <p class="indent"><strong>Ward of Ink.</strong> The creature gains a +2 bonus to AC while the tattoo is active.</p>
+                <p class="indent"><strong>Strike of Ink.</strong> Once on each of its turns, when the creature hits with a weapon attack, it deals extra damage equal to your Intelligence modifier.</p>
+                <p class="indent"><strong>Glyph of Vigor.</strong> At the start of each of the creature’s turns, it gains temporary hit points equal to your Intelligence modifier.</p>
+                <p>The creature can activate the tattoo as a bonus action, causing it to flare with arcane power for 1 minute. Once activated, the tattoo’s magic is expended when the effect ends, and the tattoo fades. A creature can’t benefit from more than one Shared Ink tattoo at a time.</p>
+            </description>
         </sheet>
 
     </element>
