@@ -16,7 +16,7 @@
             <div element="ID_MACRO_AAA_ARCHETYPE_FEATURE_LIVING_GRIMOIRE_SHARED_INK" />
             <div element="ID_MACRO_AAA_ARCHETYPE_FEATURE_LIVING_GRIMOIRE_INK_STEP" />
             <div element="ID_MACRO_AAA_ARCHETYPE_FEATURE_LIVING_GRIMOIRE_REACTIVE_INK" />
-            <div element="ID____" />
+            <div element="ID_MACRO_AAA_ARCHETYPE_FEATURE_LIVING_GRIMOIRE_TATTOO_SURGE" />
         </description>
         <sheet display="false">
             <description></description>
@@ -26,7 +26,7 @@
             <grant type="Archetype Feature" id="ID_MACRO_AAA_ARCHETYPE_FEATURE_LIVING_GRIMOIRE_SHARED_INK" level="2" />
             <grant type="Archetype Feature" id="ID_MACRO_AAA_ARCHETYPE_FEATURE_LIVING_GRIMOIRE_INK_STEP" level="6" />
             <grant type="Archetype Feature" id="ID_MACRO_AAA_ARCHETYPE_FEATURE_LIVING_GRIMOIRE_REACTIVE_INK" level="10" />
-            <grant type="Archetype Feature" id="ID____" level="1" />
+            <grant type="Archetype Feature" id="ID_MACRO_AAA_ARCHETYPE_FEATURE_LIVING_GRIMOIRE_TATTOO_SURGE" level="14" />
         </rules>
     </element>
 
