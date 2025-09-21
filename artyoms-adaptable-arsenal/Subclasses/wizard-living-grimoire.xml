@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Living Grimoire</name>
-        <update version="0.0.5">
+        <update version="0.0.7">
             <file name="wizard-living-grimoire.xml" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms-adaptable-arsenal/Subclasses/wizard-living-grimoire.xml" />
         </update>
     </info>
@@ -82,7 +82,7 @@
             <p><em>10th-level Living Grimoire feature</em></p>
             <p>When you take damage while concentrating on a spell, your tattoos flare to life, defending your magic. You can choose to automatically succeed on the Constitution saving throw to maintain concentration.</p>
             <p class="indent">In addition, inky tendrils lash out from your tattoos. All creatures of your choice in a 10-foot emanation must make a Strength saving throw against your spell save DC, taking 2d6 force damage on a failed save, or half as much on a successful one.</p>
-            <p class="indent">Once you use this feature, you can’t use it again until you take a long rest or cast another spell of 3rd level or higher that requires concentration, at which point Reactive Ink recharges.</p>
+            <p class="indent">Once you use this feature, you can’t use it again until you take a long rest or cast another spell of 3rd level or higher that requires concentration.</p>
         </description>
 
         <sheet action="Reaction" usage="1/Long Rest">
@@ -90,5 +90,20 @@
         </sheet>
     </element>
 
+    <element name="Tattoo Surge" type="Archetype Feature" source="Artyom’s Adaptable Arsenal" id="ID_MACRO_AAA_ARCHETYPE_FEATURE_LIVING_GRIMOIRE_TATTOO_SURGE">
+        <description>
+            <p><em>14th-level Order of the Living Grimoire feature</em></p>
+            <p>Your living tattoos resonate with the flow of your spells, spreading their power to others in the heat of battle. Whenever you cast a spell of 1st level or higher, you can choose one creature you can see within 30 feet of you. That creature immediately gains the benefit of one of your Shared Ink tattoos (Ward of Ink, Strike of Ink, or Glyph of Vigor) until the end of your next turn.</p>
+            <p class="indent">You can use this feature a number of times equal to your Intelligence modifier (minimum of once). You regain all expended uses when you finish a long rest.</p>
+        </description>
+
+        <sheet usage="{{tattoo surge:usage}}/Long Rest">
+            <description>When you cast a spell of 1st level or higher, choose one creature within 30 ft. It immediately gains the benefit of one Shared Ink tattoo until the end of your next turn. This doesn’t expend Shared Ink and activates automatically. Usable {{intelligence:modifier}} times per long rest.</description>
+        </sheet>
+        <rules>
+            <stat name="tattoo surge:usage" value="1" bonus="base" />
+            <stat name="tattoo surge:usage" value="intelligence:modifier" bonus="base" />
+        </rules>
+    </element>
 
 </elements>
