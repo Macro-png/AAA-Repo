@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Living Grimoire</name>
-        <update version="0.0.7">
+        <update version="0.0.8">
             <file name="wizard-living-grimoire.xml" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms-adaptable-arsenal/Subclasses/wizard-living-grimoire.xml" />
         </update>
     </info>
