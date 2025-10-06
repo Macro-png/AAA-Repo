@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-        <update version="0.0.10">
+        <update version="0.0.11">
             <file name="spells.xml" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms-adaptable-arsenal/spells.xml" />
         </update>
     </info>
@@ -76,8 +76,8 @@
             <set name="range">30 feet</set>
             <set name="duration">Concentration, up to 1 minute</set>
             <set name="hasVerbalComponent">true</set>
-            <set name="hasSomaticComponent">true</set>
-            <set name="hasMaterialComponent"></set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
             <set name="materialComponent" />
             <set name="isConcentration">true</set>
             <set name="isRitual">false</set>
