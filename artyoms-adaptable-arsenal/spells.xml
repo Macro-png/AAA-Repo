@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-        <update version="0.0.11">
+        <update version="0.0.12">
             <file name="spells.xml" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms-adaptable-arsenal/spells.xml" />
         </update>
     </info>
@@ -60,12 +60,11 @@
     <!-- 4th Level Spells -->
 
     <!-- 5th Level Spells -->
-    <element name="Antagonize" type="Spell" source="Artyom’s Adaptable Arsenal" id="ID_MACRO_AAA_SPELL_ANTAGONIZE">
+    <element name="False Foe" type="Spell" source="Artyom’s Adaptable Arsenal" id="ID_MACRO_AAA_SPELL_ANTAGONIZE">
         <supports>Bard, Paladin, Warlock</supports>
         <description>
             <p>You twist the perceptions of those around a creature, causing all others to see it as an immediate threat. Choose one creature you can see within range. The target must make a Charisma saving throw. On a failed save, all other creatures that can see the target regard it as hostile for the duration.</p>
             <p class="indent">Creatures are not compelled to attack the target, but they instinctively perceive it as an enemy and will prioritize it in combat. Furthermore, the affected creature automatically fails any ability check to interact socially with other creatures and any creatures charmed by the target immediately end that effect.</p>
-            <p class="indent">Each time the target takes damage, it can repeat its saving throw againt this spell, ending the effect on a success.</p>
             <p><strong>At Higher Levels.</strong> When you cast this spell using a 6th-level spell slot, the duration is concentration, up to 10 minutes. When you use a 7th-level spell slot, the duration is concentration, up to 1 hour. When you use a spell slot of 8th level or higher, the duration is concentration, up to 8 hours.</p>
         </description>
         <setters>
