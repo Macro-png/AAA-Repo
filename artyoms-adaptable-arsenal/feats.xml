@@ -2,15 +2,17 @@
 <elements>
     <info>
         <name></name>
-        <update version="0.0.12">
+        <update version="0.0.13">
             <file name="feats.xml" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms-adaptable-arsenal/feats.xml" />
         </update>
     </info>
 
     <!-- Feats -->
-    <element name="Pure Bloodied" type="Feat" source="Artyom’s Adaptable Arsenal" id="ID_MACRO_AAA_FEAT_PURE_BLOODIED">
+    <element name="Pure Bloodied" type="Feat" source="Artyom's Adaptable Arsenal" id="ID_MACRO_AAA_FEAT_PURE_BLOODIED">
         <prerequisite>Dhampir</prerequisite>
-        <requirements>ID_RACIAL_TRAIT_VAMPIRIC_BITE</requirements>
+        <requirements>
+            <requirement id="ID_RACIAL_TRAIT_VAMPIRIC_BITE" />
+        </requirements>
         <description>
             <p class="flavor">The vampiric blood within you has solidified, sharpening the predatory nature that has always lurked beneath the surface.</p>
             <p><i>Prerequisite: Dhampir</i></p>
@@ -22,9 +24,11 @@
             </ul>
         </description>
         <sheet>
-            <description>Your Vampiric Bite damage die increases to a d8.
-            You have resistance to necrotic damage.
-            You are considered both Humanoid and Undead for the purposes of spells and effects.</description>
+            <description>
+                Your Vampiric Bite damage die increases to a d8.
+                You have resistance to necrotic damage.
+                You are considered both Humanoid and Undead for the purposes of spells and effects.
+            </description>
         </sheet>
         <rules>
             <stat name="vampiric bite:die" value="8" bonus="base" />
