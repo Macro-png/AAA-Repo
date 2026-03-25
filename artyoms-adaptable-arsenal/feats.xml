@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name></name>
+        <update version="0.0.12">
+            <file name="feats.xml" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms-adaptable-arsenal/feats.xml" />
+        </update>
+    </info>
+
+    <!-- Feats -->
+    <element name="Pure Bloodied" type="Feat" source="Artyom’s Adaptable Arsenal" id="ID_MACRO_AAA_FEAT_PURE_BLOODIED">
+        <prerequisite>Dhampir</prerequisite>
+        <requirements>ID_RACIAL_TRAIT_VAMPIRIC_BITE</requirements>
+        <description>
+            <p class="flavor">The vampiric blood within you has solidified, sharpening the predatory nature that has always lurked beneath the surface.</p>
+            <p><i>Prerequisite: Dhampir</i></p>
+            <p>The ancient vampiric heritage within your blood has fully awakened, granting you the following benefits:</p>
+            <ul>
+                <li>Your Vampiric Bite damage die increases from a d4 to a d8.</li>
+                <li>You gain resistance to necrotic damage.</li>
+                <li>Your creature type becomes both Humanoid and Undead. You are affected by spells and abilities that target either type.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Your Vampiric Bite damage die increases to a d8.
+            You have resistance to necrotic damage.
+            You are considered both Humanoid and Undead for the purposes of spells and effects.</description>
+        </sheet>
+        <rules>
+            <stat name="vampiric-bite-die" value="8" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+        </rules>
+    </element>
