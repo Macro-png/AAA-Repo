@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name></name>
+        <update version="0.0.1">
+            <file name="modifications.xml" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms-adaptable-arsenal/modifications.xml" />
+        </update>
+    </info>
+
+    <!-- Racial Traits -->
+	<element name="Vampiric Bite" type="Racial Trait" source="Van Richten's Guide To Ravenloft" id="ID_WOTC_VRGTR_RACIAL_TRAIT_DHAMPIR_VAMPIRIC_BITE">
+		<description>
+			<p>Your fanged bite is a natural weapon, which counts as a simple melee weapon with which you are proficient. You add your Constitution modifier, instead of your Strength modifier, to the attack and damage rolls when you attack with this bite. It deals 1d{{vampiric bite:die}} piercing damage on a hit. While you are missing half or more of your hit points, you have advantage on attack rolls you make with this bite.</p>
+			<p class="indent">When you attack with this bite and hit a creature that isn’t a Construct or an Undead, you can empower yourself in one of the following ways of your choice:</p>
+			<ul>
+				<li>You regain hit points equal to the piercing damage dealt by the bite.</li>
+				<li>You gain a bonus to the next ability check or attack roll you make; the bonus equals the piercing damage dealt by the bite.</li>
+			</ul>
+			<p class="indent">You can empower yourself with this bite a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet>
+			<description>Your fanged bite is a natural weapon, which counts as a simple melee weapon with which you are proficient. You add your Constitution modifier, instead of your Strength modifier, to the attack rolls with this bite. It deals 1d{{vampiric bite:die}} + {{constitution:modifier}} piercing damage on a hit. While you are missing half or more of your hit points, you have advantage on attack rolls you make with this bite. When you attack with this bite and hit a creature that isn’t a Construct or an Undead, you can empower yourself in one of the following ways of your choice: &#13;
+			• You regain hit points equal to the piercing damage dealt by the bite. &#13;
+			• You gain a bonus to the next ability check or attack roll you make; the bonus equals the piercing damage dealt by the bite. &#13;
+			You can empower yourself with your bite {{proficiency}} times, and you regain all expended uses when you finish a long rest.</description>
+		</sheet>
+        <rules>
+            <stat name="vampiric bite:die" value="4" bonus="base" />
+        </rules>
+	</element>
+</elements>

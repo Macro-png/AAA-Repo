@@ -27,7 +27,7 @@
             You are considered both Humanoid and Undead for the purposes of spells and effects.</description>
         </sheet>
         <rules>
-            <stat name="vampiric-bite-die" value="8" />
+            <stat name="vampiric bite:die" value="8" bonus="base" />
             <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
         </rules>
     </element>
