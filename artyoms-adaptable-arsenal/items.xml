@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Items</name>
-        <update version="0.0.5">
+        <update version="0.0.6">
             <file name="items.xml" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms-adaptable-arsenal/items.xml" />
         </update>
     </info>
@@ -88,10 +88,18 @@
 
     <!-- Weapons -->
     <element name="Hook and Chain" type="Weapon" source="Artyom’s Adaptable Arsenal" id="ID_MACRO_AAA_WEAPON_HOOK_AND_CHAIN">
-        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_LIGHT,ID_INTERNAL_WEAPON_PROPERTY_FINESSE,ID_INTERNAL_WEAPON_PROPERTY_THROWN,ID_NV_FLDS_WEAPON_PROPERTY_SPECIAL_CHAIN</supports>
+        <supports>
+            ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,
+            ID_INTERNAL_DAMAGE_TYPE_PIERCING,
+            ID_INTERNAL_WEAPON_PROPERTY_THROWN,
+            ID_INTERNAL_WEAPON_PROPERTY_REACH,
+            ID_NV_FLDS_WEAPON_PROPERTY_SPECIAL_CHAIN
+        </supports>
         <description>
-            <p>When you throw this weapon, you can choose to pull it back into your hand. Any creature proficient with the whip is also proficient with this weapon.</p>
-            <p>Additionally, when you hit a creature with this weapon via a thrown attack, you can choose to force a contested Strength (Athletics) check against the target. On a success, you can pull the target anywhere in range, as long as it is always towards you.</p>
+            <p>This weapon has a hooked head attached to a length of chain, allowing it to strike at a distance or be hurled and recalled.</p>
+            <p>When you make a thrown attack with this weapon, it immediately returns to your hand after the attack resolves.</p>
+            <p>When you hit a creature with this weapon using a thrown attack, you can force a contested Strength (Athletics) check against the target. On a success, you pull the target up to 10 feet toward you in a straight line.</p>
+            <p>Any creature proficient with the whip is also proficient with this weapon.</p>
         </description>
         <setters>
             <set name="category">Weapons</set>
