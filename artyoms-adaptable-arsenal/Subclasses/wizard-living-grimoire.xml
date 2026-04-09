@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Living Grimoire</name>
-        <update version="0.0.10">
+        <update version="0.0.11">
             <file name="wizard-living-grimoire.xml" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms-adaptable-arsenal/Subclasses/wizard-living-grimoire.xml" />
         </update>
     </info>
@@ -44,32 +44,28 @@
     <element name="Shared Ink" type="Archetype Feature" source="Artyom’s Adaptable Arsenal" id="ID_MACRO_AAA_ARCHETYPE_FEATURE_LIVING_GRIMOIRE_SHARED_INK">
         <description>
             <p><em>2nd-level Living Grimoire feature</em></p>
-            <p>You gain the ability to inscribe a magical tattoo onto one willing creature other than yourself at the end of a long rest. The tattoo lasts until you finish your next long rest. When you inscribe the tattoo, choose one of the following effects:</p>
+            <p>You gain the ability to inscribe a magical tattoo onto one willing creature other than yourself at the end of a long rest. The tattoo lasts until you finish your next long rest, or until its Script is expended. A creature can't benefit from more than one Shared Ink tattoo at a time:</p>
             <ul>
-                <li><strong>Ward of Ink.</strong> The creature gains a +2 bonus to AC.</li>
-                <li><strong>Strike of Ink.</strong> Once per turn, when the creature hits with a weapon attack, it deals extra damage equal to your Intelligence modifier (minimum of +1).</li>
-                <li><strong>Glyph of Vigor.</strong> At the start of each of its turns, the creature gains temporary hit points equal to your Intelligence modifier (minimum of +1).</li>
+                <li><strong>Ward of Ink.</strong> The creature gains a +1 bonus to AC.</li>
+                <li><strong>Strike of Ink.</strong> Once per turn, when the creature hits with an attack, it deals extra damage equal to your Intelligence modifier (minimum of +1).</li>
+                <li><strong>Script of Ink.</strong> Choose a spell from your grimoire with an instantaneous duration. The creature can cast that spell once without expending a spell slot, using your spell save DC and spell attack bonus. Once the spell is cast, the tattoo and all its effects end immediately.</li>
             </ul>
-            <p>As a bonus action, the creature can activate the tattoo, causing it to flare with arcane power for 1 minute. Once activated, the tattoo’s magic is expended when the effect ends, and the tattoo fades. A creature can’t benefit from more than one Shared Ink tattoo at a time.</p>
         </description>
 
         <sheet>
-            <description>
-                <p>At the end of a long rest, you inscribe a magical tattoo on a willing creature.</p>
-                <p>The creature can activate the tattoo as a bonus action, for a duration of 1 minute. Once activated, the tattoo’s magic is expended when the effect ends, and the tattoo fades. A creature can’t benefit from more than one Shared Ink tattoo at a time.</p>
-            </description>
+            <description>At the end of a long rest, inscribe a magical tattoo on a willing creature. The tattoo lasts until your next long rest or until its Script is expended. A creature can't benefit from more than one Shared Ink tattoo at a time. Ward of Ink: +1 AC. Strike of Ink: +Int mod damage on attacks (once per turn). Script of Ink: Cast a chosen instantaneous spell once using your spellcasting ability.</description>
         </sheet>
     </element>
 
     <element name="Ink Step" type="Archetype Feature" source="Artyom’s Adaptable Arsenal" id="ID_MACRO_AAA_ARCHETYPE_FEATURE_LIVING_GRIMOIRE_INK_STEP">
         <description>
             <p><em>6th-level Living Grimoire feature</em></p>
-            <p>You gain further control of the ink in your body, allowing you to slip away when danger strikes. When you take damage from a creature you can see, you can use your reaction to teleport up to 10 feet to an unoccupied space you can see.</p>
-            <p class="indent"><strong>Ink Trail.</strong> When you use Ink Step, you leave behind a faint trail of swirling ink in your previous space until the start of your next turn. This area counts as lightly obscured for creatures within 5 feet, granting them disadvantage on Perception checks that rely on sight.</p>
+            <p>you gain further control of the ink in your body, allowing you to slip away when danger strikes. When you take damage from a creature you can see, you can use your reaction to teleport up to 10 feet to an unoccupied space you can see.</p>
+            <p class="indent">When you use Ink Step, ink lashes out at the creature that damaged you. That creature must succeed on a Constitution saving throw against your spell save DC or be blinded until the start of its next turn.</p>
             <p class="indent">You can use this feature a number of times equal to your Intelligence modifier (minimum of once). You regain all expended uses when you finish a long rest.</p>
         </description>
         <sheet action="Reaction" usage="{{ink step:usage}}/Long Rest">
-            <description>When you take damage from a creature you can see, you can teleport up to 10 feet to an unoccupied space. Ink Trail creates lightly obscured terrain in your previous space until the end of your next turn. You can use this feature {{ink step:usage}} times, and you regain all uses on a long rest.</description>
+            <description>When you take damage from a creature you can see, you can teleport up to 10 feet to an unoccupied space. The creature that damaged you must make a Constitution saving throw against your spell save DC or be blinded until the start of its next turn. You can use this feature {{ink step:usage}} times, and you regain all uses on a long rest.</description>
         </sheet>
         <rules>
             <stat name="ink step:usage" value="1" bonus="base" />
@@ -80,30 +76,26 @@
     <element name="Reactive Ink" type="Archetype Feature" source="Artyom’s Adaptable Arsenal" id="ID_MACRO_AAA_ARCHETYPE_FEATURE_LIVING_GRIMOIRE_REACTIVE_INK">
         <description>
             <p><em>10th-level Living Grimoire feature</em></p>
-            <p>When you take damage while concentrating on a spell, your tattoos flare to life, defending your magic. You can choose to automatically succeed on the Constitution saving throw to maintain concentration.</p>
-            <p class="indent">In addition, inky tendrils lash out from your tattoos. All creatures of your choice in a 10-foot emanation must make a Strength saving throw against your spell save DC, taking 2d6 force damage on a failed save, or half as much on a successful one.</p>
-            <p class="indent">Once you use this feature, you can’t use it again until you take a long rest or cast another spell of 3rd level or higher that requires concentration.</p>
+            <p>When you take damage while concentrating on a spell, your tattoos flare to life, defending your magic. You can use your reaction to automatically succeed on the Constitution saving throw to maintain concentration.</p>
+            <p class="indent">In addition, inky tendrils lash out from your tattoos. All creatures of your choice in a 10-foot emanation must make a Dexterity saving throw against your spell save DC, taking 2d6 force damage on a failed save, or half as much on a successful one.</p>
+            <p class="indent">Once you use this feature, you can't use it again until you finish a long rest or cast a spell of 3rd level or higher that requires concentration.</p>
         </description>
 
         <sheet action="Reaction" usage="1/Long Rest">
-            <description>When you take damage while concentrating on a spell, you can automatically succeed on your Constitution saving throw to maintain concentration. Inky tendrils lash out from your tattoos: all creatures of your choice in a 10-foot radius must make a Strength saving throw against your spell save DC, taking 2d6 force damage on a failed save, or half as much on a successful one. This feature recharges after you take a long rest or cast another spell of 3rd level or higher that requires concentration.</description>
+            <description>When you take damage while concentrating on a spell, you can use your reaction to automatically succeed on your Constitution saving throw to maintain concentration. Inky tendrils lash out from your tattoos: all creatures of your choice in a 10-foot emanation must make a Dexterity saving throw against your spell save DC, taking 2d6 force damage on a failed save, or half as much on a successful one. Once you use this feature, you can't use it again until you finish a long rest or cast a spell of 3rd level or higher that requires concentration.</description>
         </sheet>
     </element>
 
     <element name="Tattoo Surge" type="Archetype Feature" source="Artyom’s Adaptable Arsenal" id="ID_MACRO_AAA_ARCHETYPE_FEATURE_LIVING_GRIMOIRE_TATTOO_SURGE">
         <description>
             <p><em>14th-level Order of the Living Grimoire feature</em></p>
-            <p>Your living tattoos resonate with the flow of your spells, spreading their power to others in the heat of battle. Whenever you cast a spell of 1st level or higher, you can choose one creature you can see within 30 feet of you. That creature immediately gains the benefit of one of your Shared Ink tattoos (Ward of Ink, Strike of Ink, or Glyph of Vigor) until the end of your next turn.</p>
-            <p class="indent">You can use this feature a number of times equal to your Intelligence modifier (minimum of once). You regain all expended uses when you finish a long rest.</p>
+            <p>YYour living tattoos resonate with the flow of your spells, spreading their power to others in the heat of battle. Whenever you cast a spell of 1st level or higher, you can choose one creature you can see within 30 feet of you and immediately inscribe them with a Shared Ink tattoo. This tattoo lasts until the start of your next turn.</p>
+            <p class="indent">If the spell you cast has an instantaneous duration and is from your grimoire, the Script of Ink effect is automatically loaded with that spell, and the creature can cast it once without expending a spell slot, using your spell save DC and spell attack bonus. Once the spell is cast, the tattoo and all its effects end immediately.</p>
         </description>
 
-        <sheet usage="{{tattoo surge:usage}}/Long Rest">
-            <description>When you cast a spell of 1st level or higher, choose one creature within 30 ft. It immediately gains the benefit of one Shared Ink tattoo until the end of your next turn. You can use this feature {{intelligence:modifier}} times per long rest.</description>
+        <sheet>
+            <description>When you cast a spell of 1st level or higher, choose one creature within 30 ft. and inscribe them with a Shared Ink tattoo that lasts until the start of your next turn. If the spell is instantaneous and from your grimoire, the Script of Ink is loaded with that spell.</description>
         </sheet>
-        <rules>
-            <stat name="tattoo surge:usage" value="1" bonus="base" />
-            <stat name="tattoo surge:usage" value="intelligence:modifier" bonus="base" />
-        </rules>
     </element>
 
 </elements>
