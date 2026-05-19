@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Items (2024)</name>
+        <description>Items from Artyom's Adaptable Arsenal updated to 2024 rules.</description>
+        <update version="0.0.1">
+            <file name="items-2024.xml" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms-adaptable-arsenal/items-2024.xml" />
+        </update>
+    </info>
+
+    <!-- Weapons & Magic Items (2024) -->
+    <element name="Graviton Maul" type="Magic Item" source="Artyom's Adaptable Arsenal (2024)" id="ID_MACRO_AAA24_MAGIC_ITEM_GRAVITON_MAUL">
+        <description>
+            <p>This maul is made of a staff that has stones magically gravitating around its sphere in the shape of a huge hammer. You gain a +1 bonus to your attack and damage rolls made with this weapon.</p>
+            <p class="indent"><strong>Gravity Powers.</strong> This weapon holds 4 charges and regains 1d4 charges at dawn. Once per turn you can expend a charge to use one of the following abilities (save DC 15). Once a charge is used for one ability, the gravitational energy becomes unstable, preventing the same ability from being used again until the other ability is first used. If the same ability is used consecutively, the wielder must make a DC 15 Strength saving throw or be subjected to the failure effect listed under the ability.</p>
+            <p class="indent"><strong>Push.</strong> When you hit a creature with this weapon, you can expend one charge to deal an additional 1d6 force damage. Creatures of Huge size or smaller must succeed on a DC 15 Strength saving throw or be pushed away from you a distance depending on the creature's size (Gargantuan 5 ft., Huge 10 ft., Large 15 ft., Medium or smaller 20 ft.). If this movement causes them to collide with an object or surface of their size or larger, they suffer an additional 2d6 bludgeoning damage.</p>
+            <p class="indent"><em>Failure Effect:</em> If this effect is used consecutively, the gravity of the maul repels you 20 ft. from it. If you collide with an object or surface your size or larger, you suffer 2d6 bludgeoning damage.</p>
+            <p class="indent"><strong>Pull.</strong> Before you take the attack action with this weapon, you can expend a charge and force a creature of Large size or smaller that you can see within 20 ft. of you to make a Strength saving throw or be pulled towards you. If they fail, you can make an attack with advantage against the creature when it enters your reach, which deals an additional 2d6 force damage. If the target succeeds, they are not pulled towards you and you can instead use your attack action on a creature within range.</p>
+            <p class="indent"><em>Failure Effect:</em> If this effect is used consecutively, the gravity of the maul pulls on your body, dealing you 2d6 force damage.</p>
+        </description>
+        <setters>
+            <set name="keywords">maul, gravity, rare</set>
+            <set name="category">Magic Weapons</set>
+            <set name="type" addition="maul">Weapon</set>
+            <set name="rarity">Rare</set>
+            <set name="attunement">true</set>
+            <set name="enhancement">1</set>
+            <set name="weapon">maul</set>
+            <set name="cost" currency="gp">0</set>
+        </setters>
+    </element>
+
+    <element name="Lunar Scythe" type="Magic Item" source="Artyom's Adaptable Arsenal (2024)" id="ID_MACRO_AAA24_MAGIC_ITEM_LUNAR_SCYTHE">
+        <description>
+            <p>You have a +1 bonus to attack and damage rolls made with this magic weapon. The blade gleams with an ethereal lunar light.</p>
+        </description>
+        <setters>
+            <set name="keywords">glaive, lunar, uncommon</set>
+            <set name="category">Magic Weapons</set>
+            <set name="type" addition="glaive">Weapon</set>
+            <set name="rarity">Uncommon</set>
+            <set name="enhancement">1</set>
+            <set name="weapon">glaive</set>
+            <set name="cost" currency="gp">0</set>
+        </setters>
+    </element>
+
+    <!-- Weapons -->
+    <element name="Hook and Chain" type="Weapon" source="Artyom's Adaptable Arsenal (2024)" id="ID_MACRO_AAA24_WEAPON_HOOK_AND_CHAIN">
+        <supports>
+            ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,
+            ID_INTERNAL_DAMAGE_TYPE_PIERCING,
+            ID_INTERNAL_WEAPON_PROPERTY_THROWN,
+            ID_INTERNAL_WEAPON_PROPERTY_REACH,
+            ID_NV_FLDS_WEAPON_PROPERTY_SPECIAL_CHAIN
+        </supports>
+        <description>
+            <p>This weapon has a hooked head attached to a length of chain, allowing it to strike at a distance or be hurled and recalled.</p>
+            <p class="indent"><strong>Returning.</strong> When you make a thrown attack with this weapon, it immediately returns to your hand after the attack resolves.</p>
+            <p class="indent"><strong>Grappling Hook.</strong> When you hit a creature with this weapon using a thrown attack, you can force a contested Strength (Athletics) check against the target. On a success, you pull the target up to 10 feet toward you in a straight line.</p>
+            <p class="indent"><strong>Proficiency.</strong> Any creature proficient with the whip is also proficient with this weapon.</p>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="damage" type="piercing">2d4</set>
+            <set name="weight" lb="3">3 lb.</set>
+            <set name="cost" currency="gp">200</set>
+            <set name="slot">onehand</set>
+            <set name="range">15/30</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_WHIP</set>
+        </setters>
+    </element>
+</elements>

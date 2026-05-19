@@ -8,7 +8,7 @@
     </info>
 
     <!-- Relics -->
-    <element name="Singing Snare" type="Magic Item" source="Artyom’s Adaptable Arsenal" id="ID_MACRO_AAA_MAGIC_ITEM_SINGING_SNARE">
+    <element name="Singing Snare" type="Magic Item" source="Artyom's Adaptable Arsenal" id="ID_MACRO_AAA_MAGIC_ITEM_SINGING_SNARE">
         <description>
             <p>Forged for bards who dance between battle and melody, the Singing Snare is a silver-braided whip that hums with a haunting tune when wielded. Its handle is engraved with flowing musical notes, and the initials R.C. are delicately carved into the base. The whip’s magic resonates with the bard’s performance, enhancing their ability to heal and control the battlefield.</p>
             <p class="indent">While the Singing Snare is in a dormant state, the whip has 5 charges and regains 1d4 + 1 expended charges daily at dawn. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC: <em>entangle</em> (1 charge) or <em>tasha’s mind whip</em> (2 charges)</p>
@@ -28,7 +28,7 @@
     </element>
 
     <!-- Magic Weapons -->
-    <element name="Funker’s Enchanted Violin" type="Magic Item" source="Artyom’s Adaptable Arsenal" id="ID_MACRO_AAA_MAGIC_ITEM_FUNKER_ENCHANTED_VIOLIN">
+    <element name="Funker's Enchanted Violin" type="Magic Item" source="Artyom's Adaptable Arsenal" id="ID_MACRO_AAA_MAGIC_ITEM_FUNKER_ENCHANTED_VIOLIN">
         <description>
             <p>An exquisitely crafted violin, passed down through the Funker family, its melodies capable of weaving magic into the air. The body is engraved with intricate patterns of swirling notes, and its strings hum with unseen energy. With a flick of the wrist, the violin transforms into a shortbow as a bonus action, its bowstring shimmering like a thread of pure song.</p>
             <p>You can use an action to play the instrument and cast one of its spells. Once the instrument has been used to cast a spell, it can’t be used to cast another spell again until the next dawn. The spells use your spellcasting ability and spell save DC.</p>
@@ -48,7 +48,7 @@
         </setters>
     </element>
 
-    <element name="Graviton Maul" type="Magic Item" source="Artyom’s Adaptable Arsenal" id="ID_MACRO_AAA_MAGIC_ITEM_GRAVITATIONAL_MAUL">
+    <element name="Graviton Maul" type="Magic Item" source="Artyom's Adaptable Arsenal" id="ID_MACRO_AAA_MAGIC_ITEM_GRAVITATIONAL_MAUL">
         <description>
             <p>This maul is made of a staff that has stones magically gravitating around its sphere in the shape of a huge hammer. You gain a +1 bonus to your attack and damage rolls made with this weapon.</p>
             <p>This weapon holds 4 charges and regains 1d4 charges at dawn. Once per turn you can expend a charge to use one of the following abilities (DC 15). Once a charge is used for one ability, the gravitational energy becomes unstable preventing the same ability from being used again until the other ability is first used. If the same ability is used consecutively the wielder must make a DC 15 Strength save or be subjected to the failure effect listed under the ability descriptions.</p>
@@ -70,7 +70,7 @@
         </setters>
     </element>
 
-    <element name="Lunar Scythe" type="Magic Item" source="Artyom’s Adaptable Arsenal" id="ID_MACRO_AAA_MAGIC_ITEM_LUNAR_SCYTHE">
+    <element name="Lunar Scythe" type="Magic Item" source="Artyom's Adaptable Arsenal" id="ID_MACRO_AAA_MAGIC_ITEM_LUNAR_SCYTHE">
         <description>
             <p>You have a +1 bonus to attack and damage rolls made with this magic weapon.</p>
         </description>
@@ -87,7 +87,7 @@
     </element>
 
     <!-- Weapons -->
-    <element name="Hook and Chain" type="Weapon" source="Artyom’s Adaptable Arsenal" id="ID_MACRO_AAA_WEAPON_HOOK_AND_CHAIN">
+    <element name="Hook and Chain" type="Weapon" source="Artyom's Adaptable Arsenal" id="ID_MACRO_AAA_WEAPON_HOOK_AND_CHAIN">
         <supports>
             ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,
             ID_INTERNAL_DAMAGE_TYPE_PIERCING,
@@ -113,7 +113,7 @@
     </element>
 
     <!-- Magic armor -->
-    <element name="Bulette Plate" type="Magic Item" source="Artyom’s Adaptable Arsenal" id="ID_MACRO_AAA_MAGIC_ITEM_ARMOR_BULETTE_PLATE">
+    <element name="Bulette Plate" type="Magic Item" source="Artyom's Adaptable Arsenal" id="ID_MACRO_AAA_MAGIC_ITEM_ARMOR_BULETTE_PLATE">
         <description>
             <p>While wearing this armor, you gain tremorsense with a range of 10 feet. You can detect and pinpoint the origin of vibrations within this range, provided that you and the source of the vibrations are in contact with the same ground or substance. This sense cannot be used to detect flying or incorporeal creatures.</p>
         </description>
@@ -134,7 +134,7 @@
     </element>
 
     <!-- Wondrous Items -->
-    <element name="Coat of Many Pockets" type="Magic Item" source="Artyom’s Adaptable Arsenal" id="ID_MACRO_AAA_MAGIC_ITEM_COAT_OF_MANY_POCKETS">
+    <element name="Coat of Many Pockets" type="Magic Item" source="Artyom's Adaptable Arsenal" id="ID_MACRO_AAA_MAGIC_ITEM_COAT_OF_MANY_POCKETS">
         <description>
             <p>This finely crafted coat or cloak is tailored to fit its wearer perfectly. Its outer material varies, ranging from luxurious fabrics to sturdy leathers, often adorned with subtle, intricate patterns. While it may appear to be a mere fashionable garment, its true magic lies within.</p>
             <p><strong>Extradimensional Pockets.</strong>While wearing this coat, you can access an array of pockets that appear wherever you wish on the garment. These pockets function as a single Bag of Holding, all leading to the same extradimensional space. Only you, or creatures you designate, can retrieve or store items within the coat. Others attempting to access its contents find only mundane, empty pockets.</p>
@@ -149,7 +149,7 @@
         </setters>
     </element>
 
-    <element name="Aqua's Oar" type="Magic Item" source="Artyom’s Adaptable Arsenal" id="ID_source_abbreviation_MAGIC_ITEM_name">
+    <element name="Aqua's Oar" type="Magic Item" source="Artyom's Adaptable Arsenal" id="ID_source_abbreviation_MAGIC_ITEM_name">
         <description>
             <p>While holding this oar, you can cast the <em>shape water</em> cantrip at will. Once per dawn, you can cast <em>control water</em> from it, using your spell save DC. You must hold the oar in both hands to use this property.</p>
         </description>
