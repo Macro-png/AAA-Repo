@@ -149,7 +149,6 @@
         </setters>
     </element>
 
-<<<<<<< HEAD
     <element name="Caretaker's Gauntlet" type="Magic Item" source="Artyom's Adaptable Arsenal" id="ID_MACRO_AAA_MAGIC_ITEM_CARETAKERS_GAUNTLET">
         <description>
             <p>This finely made gauntlet is set with a polished jade button near the wrist. While wearing it, you have resistance to psychic damage.</p>
@@ -170,9 +169,6 @@
     </element>
 
     <element name="Oar of Water Control" type="Magic Item" source="Artyom's Adaptable Arsenal" id="ID_MACRO_AAA_MAGIC_ITEM_OAR_OF_WATER_CONTROL">
-=======
-    <element name="Aqua's Oar" type="Magic Item" source="Artyom's Adaptable Arsenal" id="ID_source_abbreviation_MAGIC_ITEM_name">
->>>>>>> e1b507b56e28b0a7204ba4b7d9c081e1654a642c
         <description>
             <p>While holding this oar, you can cast the <em>shape water</em> cantrip at will. Once per dawn, you can cast <em>control water</em> from it, using your spell save DC. You must hold the oar in both hands to use this property.</p>
         </description>

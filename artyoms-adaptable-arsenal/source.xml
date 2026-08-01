@@ -28,9 +28,6 @@
             <set name="release">20250309</set>
         </setters>
     </element>
-<<<<<<< HEAD
-</elements>
-=======
 
     <element name="Artyom's Adaptable Arsenal (2024)" type="Source" source="Core" id="ID_MACRO_SOURCE_ARTYOMS_ADAPTABLE_ARSENAL_2024">
         <description>
@@ -51,4 +48,3 @@
         </setters>
     </element>
 </elements>
->>>>>>> e1b507b56e28b0a7204ba4b7d9c081e1654a642c
