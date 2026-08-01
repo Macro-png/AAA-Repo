@@ -1,18 +1,18 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <elements>
     <info>
         <name></name>
-        <update version="0.0.12">
+        <update version="0.0.13">
             <file name="spells.xml" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms-adaptable-arsenal/spells.xml" />
         </update>
     </info>
     
     <!-- Cantrips -->
-    <element name="Magnify Sight" type="Spell" source="Artyom’s Adaptable Arsenal" id="ID_MACRO_AAA_SPELL_MAGNIFY_SIGHT">
+    <element name="Magnify Sight" type="Spell" source="Artyom's Adaptable Arsenal" id="ID_MACRO_AAA_SPELL_MAGNIFY_SIGHT">
         <supports>Bard, Wizard, Artificer</supports>
         <description>
             <p>You create a loop with your fingers and peer through it, magically magnifying your sight. While concentrating, anything you can see viewed through the loop appears twice as large.</p>
-            <p class="indent">The spell’s magnification increases to four times at 5th level, eight times at 11th level, and sixteen times at 17th level.</p>
+            <p class="indent">The spell's magnification increases to four times at 5th level, eight times at 11th level, and sixteen times at 17th level.</p>
         </description>
         <setters>
             <set name="keywords">visual</set>
@@ -31,7 +31,7 @@
     </element>
 
     <!-- 1st Level Spells -->
-    <element name="Chain Pull" type="Spell" source="Artyom’s Adaptable Arsenal" id="ID_MACRO_AAA_SPELL_CHAIN_PULL">
+    <element name="Chain Pull" type="Spell" source="Artyom's Adaptable Arsenal" id="ID_MACRO_AAA_SPELL_CHAIN_PULL">
         <supports>Warlock</supports>
         <description>   
             <p>Spectral chains lash out from you. Each creature of your choice in a 15-foot emanation originating from you must make a Strength saving throw. On a failed save, a target takes 2d4 force damage and is pulled 10 feet closer to you. On a successful save, a target takes half as much damage and is not pulled.</p>
@@ -60,7 +60,7 @@
     <!-- 4th Level Spells -->
 
     <!-- 5th Level Spells -->
-    <element name="False Foe" type="Spell" source="Artyom’s Adaptable Arsenal" id="ID_MACRO_AAA_SPELL_ANTAGONIZE">
+    <element name="False Foe" type="Spell" source="Artyom's Adaptable Arsenal" id="ID_MACRO_AAA_SPELL_ANTAGONIZE">
         <supports>Bard, Paladin, Warlock</supports>
         <description>
             <p>You twist the perceptions of those around a creature, causing all others to see it as an immediate threat. Choose one creature you can see within range. The target must make a Charisma saving throw. On a failed save, all other creatures that can see the target regard it as hostile for the duration.</p>
@@ -68,7 +68,7 @@
             <p><strong>At Higher Levels.</strong> When you cast this spell using a 6th-level spell slot, the duration is concentration, up to 10 minutes. When you use a 7th-level spell slot, the duration is concentration, up to 1 hour. When you use a spell slot of 8th level or higher, the duration is concentration, up to 8 hours.</p>
         </description>
         <setters>
-            <set name="keywords">controll</set>
+            <set name="keywords">control</set>
             <set name="level">5</set>
             <set name="school">Enchantment</set>
             <set name="time">1 action</set>
