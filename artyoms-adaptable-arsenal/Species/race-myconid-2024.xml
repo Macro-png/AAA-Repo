@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Myconid (2024)</name>
+		<description>The Myconid species from Artyom's Adaptable Arsenal updated to 2024 rules.</description>
+		<update version="0.0.1">
+			<file name="race-myconid-2024.xml" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms-adaptable-arsenal/Species/race-myconid-2024.xml" />
+		</update>
+	</info>
+	
+	<element name="Myconid" type="Race" source="Artyom's Adaptable Arsenal (2024)" id="ID_MACRO_AAA24_RACE_MYCONID">
+		<description>
+			<p>Silent and ever-growing, myconids spread through the release of spores, giving rise to clusters of fungi—some of which mature into sentient beings. Their forms vary wildly, from tiny sprouting caps to towering fungal guardians. Bound by an unseen network, they communicate in hushed spores, forming tightly woven colonies that thrive in the deep, damp places of the world.</p>
+			<h5>MYCONID TRAITS</h5>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Creature Type:</strong> Plant</li>
+				<li><strong>Size:</strong> Small or Medium (you choose)</li>
+				<li><strong>Speed:</strong> 25 feet</li>
+			</ul>
+			<p>As a Myconid, you have these special traits.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You have Darkvision with a range of 60 feet.</p>
+			<p class="indent"><strong><em>Fungal Form.</em></strong> You have Advantage on saving throws you make to avoid or end the Poisoned condition. You also have Resistance to Poison damage.</p> 
+			<p class="indent"><strong><em>Pheromone Spores.</em></strong> As a Bonus Action, you can expend one use of this trait to cover one creature that you can see within 60 feet of you with scented spores. For 1 minute, you and all other myconids and spore servants have Advantage on attack rolls against that creature. You can use this Bonus Action a number of times equal to your Constitution modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
+			<p class="indent"><strong><em>Rapport Spores.</em></strong> You can communicate telepathically with any creature you can see within 30 feet of you, provided the creature has an Intelligence score of 2 or higher. To understand each other, you and the creature must share a language. The creature can't be an Undead, Construct, or Elemental.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_RACE_MYCONID" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Myconid)" supports="Custom Ability Score Improvement Option" requirements="!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<select type="Size" name="Size (Myconid)" supports="ID_SIZE_SMALL|ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="25" bonus="base" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Myconid)" supports="Standard" number="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language (Myconid)" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" number="3" />
+
+			<grant type="Vision" id="ID_VISION_DARKVISION" requirements="!ID_INTERNAL_PHB24_RACIAL_TRAIT_REPLACEMENT_MYCONID_DARKVISION" />
+			<stat name="darkvision:range" value="60" requirements="!ID_INTERNAL_PHB24_RACIAL_TRAIT_REPLACEMENT_MYCONID_DARKVISION" bonus="base" />
+			<grant type="Racial Trait" id="ID_MACRO_AAA24_RACIAL_TRAIT_MYCONID_FUNGAL_FORM" />
+			<grant type="Racial Trait" id="ID_MACRO_AAA24_RACIAL_TRAIT_MYCONID_PHEROMONE_SPORES" />
+			<grant type="Racial Trait" id="ID_MACRO_AAA24_RACIAL_TRAIT_MYCONID_RAPPORT_SPORES" />
+		</rules>
+	</element>
+
+	<element name="Fungal Form" type="Racial Trait" source="Artyom's Adaptable Arsenal (2024)" id="ID_MACRO_AAA24_RACIAL_TRAIT_MYCONID_FUNGAL_FORM">
+		<requirements>!ID_INTERNAL_PHB24_RACIAL_TRAIT_REPLACEMENT_MYCONID_FUNGAL_FORM</requirements>
+		<description>
+			<p>You have Advantage on saving throws you make to avoid or end the Poisoned condition. You also have Resistance to Poison damage.</p>
+		</description>
+		<sheet>
+			<description>You have Advantage on saving throws you make to avoid or end the Poisoned condition, and Resistance to Poison damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
+	</element>
+
+	<element name="Pheromone Spores" type="Racial Trait" source="Artyom's Adaptable Arsenal (2024)" id="ID_MACRO_AAA24_RACIAL_TRAIT_MYCONID_PHEROMONE_SPORES">
+		<requirements>!ID_INTERNAL_PHB24_RACIAL_TRAIT_REPLACEMENT_MYCONID_PHEROMONE_SPORES</requirements>
+		<description>
+			<p>As a Bonus Action, you can expend one use of this trait to cover one creature that you can see within 60 feet of you with scented spores. For 1 minute, you and all other myconids and spore servants have Advantage on attack rolls against that creature. You can use this Bonus Action a number of times equal to your Constitution modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Constitution Modifier (minimum 1)/Long Rest">
+			<description>You can mark a creature within 60 feet with scented spores for 1 minute. You and all myconids and spore servants have Advantage on attack rolls against it.</description>
+		</sheet>
+	</element>
+
+	<element name="Rapport Spores" type="Racial Trait" source="Artyom's Adaptable Arsenal (2024)" id="ID_MACRO_AAA24_RACIAL_TRAIT_MYCONID_RAPPORT_SPORES">
+		<requirements>!ID_INTERNAL_PHB24_RACIAL_TRAIT_REPLACEMENT_MYCONID_RAPPORT_SPORES</requirements>
+		<description>
+			<p>You can communicate telepathically with any creature you can see within 30 feet of you, provided the creature has an Intelligence score of 2 or higher. To understand each other, you and the creature must share a language. The creature can't be an Undead, Construct, or Elemental.</p>
+		</description>
+		<sheet>
+			<description>You can communicate telepathically with any creature you can see within 30 feet of you, provided it has an Intelligence of 2 or higher and isn't an Undead, Construct, or Elemental.</description>
+		</sheet>
+	</element>
+
+	<!--Racial Trait Replacement Grants-->
+	<element name="Darkvision Trait Replacement" type="Grants" source="Internal" id="ID_INTERNAL_PHB24_RACIAL_TRAIT_REPLACEMENT_MYCONID_DARKVISION" />
+	<element name="Fungal Form Trait Replacement" type="Grants" source="Internal" id="ID_INTERNAL_PHB24_RACIAL_TRAIT_REPLACEMENT_MYCONID_FUNGAL_FORM" />
+	<element name="Pheromone Spores Trait Replacement" type="Grants" source="Internal" id="ID_INTERNAL_PHB24_RACIAL_TRAIT_REPLACEMENT_MYCONID_PHEROMONE_SPORES" />
+	<element name="Rapport Spores Trait Replacement" type="Grants" source="Internal" id="ID_INTERNAL_PHB24_RACIAL_TRAIT_REPLACEMENT_MYCONID_RAPPORT_SPORES" />
+
+</elements>
