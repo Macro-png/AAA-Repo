@@ -1,11 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <elements>
     <info>
-<<<<<<< HEAD
         <name>Artyom's Adaptable Arsenal</name>
-=======
-        <name></name>
->>>>>>> e1b507b56e28b0a7204ba4b7d9c081e1654a642c
         <update version="0.0.2">
             <file name="source.xml" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms-adaptable-arsenal/source.xml" />
         </update>
