@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Artyom's Adaptable Arsenal</name>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <file name="source.xml" url="https://raw.githubusercontent.com/Macro-png/AAA-Repo/refs/heads/main/artyoms-adaptable-arsenal/source.xml" />
         </update>
     </info>
