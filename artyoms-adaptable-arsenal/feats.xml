@@ -10,9 +10,7 @@
     <!-- Feats -->
     <element name="Pure Bloodied" type="Feat" source="Artyom's Adaptable Arsenal" id="ID_MACRO_AAA_FEAT_PURE_BLOODIED">
         <prerequisite>Dhampir</prerequisite>
-        <requirements>
-            <requirement id="ID_RACIAL_TRAIT_VAMPIRIC_BITE" />
-        </requirements>
+        <requirements>ID_WOTC_VRGTR_RACIAL_TRAIT_DHAMPIR_VAMPIRIC_BITE</requirements>
         <description>
             <p class="flavor">The vampiric blood within you has solidified, sharpening the predatory nature that has always lurked beneath the surface.</p>
             <p><i>Prerequisite: Dhampir</i></p>
@@ -34,5 +32,38 @@
             <stat name="vampiric bite:die" value="8" bonus="base" />
             <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
         </rules>
+    </element>
+
+    <element name="Faithful Companion" type="Feat" source="Artyom's Adaptable Arsenal" id="ID_MACRO_AAA_FEAT_FAITHFUL_COMPANION">
+        <supports>Origin</supports>
+        <description>
+            <p class="flavor">Origin Feat</p>
+            <p>You gain the following benefits.</p>
+            <p class="indent"><b><i>Faithful Companion.</i></b> You always have the <i>Find Familiar</i> spell prepared. Intelligence, Wisdom, or Charisma is your spellcasting ability for this spell (choose when you select this feat). You can cast it once without a spell slot or Material components, and you regain the ability to do so when you finish a Long Rest. You can also cast the spell using any spell slots you have.</p>
+            <p class="indent"><b><i>Fortified Familiar.</i></b> When you cast the <i>Find Familiar</i> spell, your familiar's Hit Point maximum and current Hit Points increase by an amount equal to twice your character level.</p>
+            <p class="indent"><b><i>Helpful Friend.</i></b> When you make an ability check using a skill in which you have proficiency while your familiar is within 5 feet of you, you gain Advantage on the check. You can use this benefit a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>
+        </description>
+        <sheet usage="{{proficiency}}/Long Rest">
+            <description>You always have Find Familiar prepared and can cast it once without a spell slot or Material components per Long Rest, or with spell slots. Your spellcasting ability is the one chosen for this feat. When you cast it, your familiar's maximum and current HP increase by twice your character level. While your familiar is within 5 feet, you can gain Advantage on a proficient skill check {{proficiency}} times per Long Rest.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_WOTC_PHB24_SPELL_FIND_FAMILIAR" />
+            <select type="Feat Feature" name="Spellcasting Ability (Faithful Companion)" supports="ID_MACRO_AAA_FEAT_FEATURE_FAITHFUL_COMPANION_INTELLIGENCE|ID_MACRO_AAA_FEAT_FEATURE_FAITHFUL_COMPANION_WISDOM|ID_MACRO_AAA_FEAT_FEATURE_FAITHFUL_COMPANION_CHARISMA" />
+        </rules>
+    </element>
+    <element name="Intelligence" type="Feat Feature" source="Artyom's Adaptable Arsenal" id="ID_MACRO_AAA_FEAT_FEATURE_FAITHFUL_COMPANION_INTELLIGENCE">
+        <compendium display="false" />
+        <description><p>Intelligence is your spellcasting ability for Find Familiar.</p></description>
+        <sheet alt="Faithful Companion"><description>Your spellcasting ability for Find Familiar is Intelligence.</description></sheet>
+    </element>
+    <element name="Wisdom" type="Feat Feature" source="Artyom's Adaptable Arsenal" id="ID_MACRO_AAA_FEAT_FEATURE_FAITHFUL_COMPANION_WISDOM">
+        <compendium display="false" />
+        <description><p>Wisdom is your spellcasting ability for Find Familiar.</p></description>
+        <sheet alt="Faithful Companion"><description>Your spellcasting ability for Find Familiar is Wisdom.</description></sheet>
+    </element>
+    <element name="Charisma" type="Feat Feature" source="Artyom's Adaptable Arsenal" id="ID_MACRO_AAA_FEAT_FEATURE_FAITHFUL_COMPANION_CHARISMA">
+        <compendium display="false" />
+        <description><p>Charisma is your spellcasting ability for Find Familiar.</p></description>
+        <sheet alt="Faithful Companion"><description>Your spellcasting ability for Find Familiar is Charisma.</description></sheet>
     </element>
 </elements>
